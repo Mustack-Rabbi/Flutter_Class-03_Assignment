@@ -107,3 +107,15 @@
 
 ## Result
 ````
+
+
+![Class-03_Assignment_03](https://user-images.githubusercontent.com/86506002/185081249-f953913f-e917-4f43-bf4a-28f1c9f23a26.jpg)
+
+
+![Class-03_Assignment_03b](https://user-images.githubusercontent.com/86506002/185081312-bdb56402-3d14-4d30-b877-b8478ce0bf35.jpg)
+
+
+![Class-03_Assignment_03c](https://user-images.githubusercontent.com/86506002/185081354-39a439d5-b5f3-4132-9162-df0fbf184064.jpg)
+
+
+
