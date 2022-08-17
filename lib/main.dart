@@ -20,8 +20,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
+    //final height = MediaQuery.of(context).size.height;
+    // final width = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
             backgroundColor: Colors.amber,
@@ -36,11 +36,36 @@ class HomePage extends StatelessWidget {
               color: Colors.amber,
               size: 150.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text("Login UI"),
-            SizedBox(
+            Stack(
+              children: [
+                Text(
+                  "Login UI",
+                  style: TextStyle(
+                    fontSize: 40,
+                    //fontWeight: FontWeight.bold,
+                    // color: Colors.amber,
+                    // textBaseline: TextBaseline.alphabetic,
+                    foreground: Paint()
+                      ..style = PaintingStyle.stroke
+                      ..strokeWidth = 6
+                      ..color = Colors.amber,
+                  ),
+                ),
+                const Text(
+                  "Login UI",
+                  style: TextStyle(
+                    fontSize: 40,
+                    //fontWeight: FontWeight.bold,
+                    color: Colors.white70,
+                    // textBaseline: TextBaseline.alphabetic,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -49,7 +74,7 @@ class HomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(10)),
-                child: Padding(
+                child: const Padding(
                   padding: EdgeInsets.only(left: 15),
                   child: TextField(
                     decoration: InputDecoration(
@@ -59,7 +84,39 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(10)),
+                child: const Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                        hintText: 'Password',
+                        icon: Icon(Icons.lock, color: Colors.white),
+                        border: InputBorder.none),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+                color: Colors.amber,
+                padding: const EdgeInsets.all(8.0),
+                child: const Text(
+                  "Login",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ))
           ],
         )
 
